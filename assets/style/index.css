@@ -11,7 +11,7 @@
 }
  
 body {
- background-color: var(--app-orange);
+ background-color: #f1f2f3;
 }
 
 body, p {
@@ -114,7 +114,7 @@ p {
     background-color: var(--app-green);
     display: grid;
     place-items: center;
-    padding: 60px;
+    padding: 100px;
     gap: 50px;
     border-radius: 20px;
   }

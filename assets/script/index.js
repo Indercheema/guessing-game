@@ -21,7 +21,7 @@ function  select(selector, parent = document){
 return parent.querySelector(selector);
 }
 const form = select('form');
-const numberOne = select('.number-one');
+const userInput = select('.input');
 const btn = select('.btn');
 const output = select('.output p');
 
@@ -42,24 +42,25 @@ return false;
 //Adding an event listener
 onEvent('click', btn, function() {
 
-let a = numberOne.value;
-let b = 10;
-let c = 15;
+let userNumber = userInput.value;
+let randomNumber = Math.floor(Math.random()*50) + 1;
+let maxNumber = 50;
 
 if (count < 1 ) {
     output.innerText = `Your are run out of Chances: You have  ${count} chances `;
     output.innerText = ` ${result}`;
     count = 4;
-} else if (a > c || a < 1) {
-    output.innerText =`Choose between 1 - 15 :`;
+} else if (userNumber > maxNumber || userNumber < 1) {
+    output.innerText =`Please enter number between 1 - 50`;
+    count = 4;
 }
-else if(a == b){
+else if(userNumber == randomNumber){
     output.innerText =`Congratulations You won:`;
-    numberOne.value ='';
+    userInput.value ='';
 
-} else if( a < b) {
+} else if( userNumber < randomNumber) {
     output.innerText = `My number is greater : You have  ${count} chances`;
-}else if  (a > b){
+}else if  (userNumber > randomNumber){
     output.innerText = `My number is smaller : You have  ${count} chances `;
 
 }
