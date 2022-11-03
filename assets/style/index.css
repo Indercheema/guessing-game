@@ -107,7 +107,7 @@ p {
     font-weight: 400;
     color: #f2f4f6;
     line-height: 52px;
-    cursor: default;
+    cursor: default;
   }
 
   .game {
@@ -118,3 +118,19 @@ p {
     gap: 50px;
     border-radius: 20px;
   }
+
+  .restart {
+    background-color: var(--app-purple);
+    border: 1px solid var(--app-purple);
+    visibility: hidden;
+  }
+
+  .restart.restart-show {
+    background-color: var(--app-purple);
+    border: 1px solid var(--app-purple);
+  }
+
+  .restart:hover {
+    background-color: #7b36f3;
+  }
+  
