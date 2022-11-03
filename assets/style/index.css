@@ -29,7 +29,14 @@ h1, h2, h3, a, p, label {
 
 h2 {
     font-size: 24px;
+    animation-name: example;
+    animation-duration: 4s;
 }
+
+@keyframes example {
+    from {color: #000;}
+    to {color: #fff;}
+  }
 
 p {
     font-size: 20px;
@@ -42,7 +49,6 @@ p {
   }
   
   form {
-    margin-top: 20px;
     width: 400px;
     text-align: right;
   }
@@ -85,7 +91,6 @@ p {
   }
 
   .output {
-    margin-top: 40px;
     height: 52px;
     width: 400px;
     padding: 0 15px;
@@ -103,4 +108,13 @@ p {
     color: #f2f4f6;
     line-height: 52px;
     cursor: default;
+  }
+
+  .game {
+    background-color: var(--app-green);
+    display: grid;
+    place-items: center;
+    padding: 60px;
+    gap: 50px;
+    border-radius: 20px;
   }

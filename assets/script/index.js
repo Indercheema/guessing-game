@@ -22,8 +22,7 @@ return parent.querySelector(selector);
 }
 const form = select('form');
 const numberOne = select('.number-one');
-const numberTwo = select('.number-two');
-const btn = select('.get-result');
+const btn = select('.btn');
 const output = select('.output p');
 
 
@@ -52,16 +51,16 @@ if (count < 1 ) {
     output.innerText = ` ${result}`;
     count = 4;
 } else if (a > c || a < 1) {
-    output.innerText =`Choose between 1 - 15 : You have  ${count} chances`;
+    output.innerText =`Choose between 1 - 15 :`;
 }
 else if(a == b){
     output.innerText =`Congratulations You won:`;
     numberOne.value ='';
 
 } else if( a < b) {
-    output.innerText = `Your number is smaller than Mine : You have  ${count} chances`;
+    output.innerText = `My number is greater : You have  ${count} chances`;
 }else if  (a > b){
-    output.innerText = `Your number is greater than mine : You have  ${count} chances `;
+    output.innerText = `My number is smaller : You have  ${count} chances `;
 
 }
 count--;
