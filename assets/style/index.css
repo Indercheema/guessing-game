@@ -125,7 +125,7 @@ p {
     visibility: hidden;
   }
 
-  .restart.restart-show {
+  .restart-show {
     background-color: var(--app-purple);
     border: 1px solid var(--app-purple);
   }

@@ -24,7 +24,7 @@ const form = select('form');
 const userInput = select('.input');
 const btn = select('.btn');
 const restart = select('.restart');
-const output = select('.output .msg1');
+const output = select('.output p');
 const gameOver = select('.output .game-over');
 
 
@@ -54,7 +54,7 @@ if (count < 1 ) {
     count = 4;
 } else if (userNumber > maxNumber || userNumber < 1) {
     output.innerText =`Please enter number between 1 - 50`;
-    count = 4;
+    count = 5;
 }
 else if(userNumber == randomNumber){
     output.innerText =`Congratulations You won:`;
