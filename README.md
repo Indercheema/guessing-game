@@ -1,3 +1,9 @@
-## Guesing Game
+## Click me if you can
 
-click [here](https://indercheema.github.io/guessing-game/) to test the game
+A simple point-and-click game made with JavaScript.
+
+### Demo
+
+Click [here](https://indercheema.github.io/guessing-game/) to play.
+
+
