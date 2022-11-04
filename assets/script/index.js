@@ -80,7 +80,7 @@ onEvent('click', btn, function () {
         }
         count--;
     } else {
-        output.innerText = 'Please enter numbers only';
+        output.innerText = 'Please enter numbers only between 1 - 50';
     }
 
 });
