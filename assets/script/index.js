@@ -58,7 +58,7 @@ onEvent('click', btn, function () {
     if (isNumber(userNumber)) {
 
         if (count < 1) {
-            output.innerText = `Your are run out of Chances: You have  ${count} chances `;
+            output.innerText = `Your are run out of Chances: My number was ${randomNumber} `;
             gameOver.innerText = 'Please restart the game';
             showRestart();
             output.innerText = ` ${result}`;
