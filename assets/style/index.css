@@ -29,8 +29,7 @@ h1, h2, h3, a, p, label {
 
 h2 {
     font-size: 24px;
-    animation-name: example;
-    animation-duration: 4s;
+    animation: example 2.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
 }
 
 @keyframes example {
@@ -126,6 +125,8 @@ p {
     background-color: #884b2f;
     border: 1px solid #884b2f;
     visibility: visible;
+    animation: shake 2.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+
   }
 
   .restart:hover {
@@ -136,3 +137,10 @@ p {
     text-align: center;
     width: 400px;
   }
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0)      }
+    20%, 80% { transform: translate3d(2px, 0, 0)       }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0) }
+    40%, 60% { transform: translate3d(4px, 0, 0)       }
+}
