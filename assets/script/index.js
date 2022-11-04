@@ -54,7 +54,6 @@ onEvent('click', btn, function () {
 
     let userNumber = userInput.value;
     let maxNumber = 50;
-    console.log(randomNumber);
     if (isNumber(userNumber)) {
         --count;
 
@@ -69,7 +68,7 @@ onEvent('click', btn, function () {
         }
         else if (count < 1) {
 
-            output.innerText = `Your are run out of Chances: My number was ${randomNumber} `;
+            output.innerText = `Your are run out of Chances: My number was ${randomNumber}`;
             gameOver.innerText = 'Please restart the game';
             showRestart();
             btn.disabled = true;
