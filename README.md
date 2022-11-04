@@ -1,6 +1,6 @@
-## Click me if you can
+## Guessing Game
 
-A simple point-and-click game made with JavaScript.
+A simple guessing game made with JavaScript.
 
 ### Demo
 
