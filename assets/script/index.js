@@ -47,13 +47,14 @@ function genRandomNunber() {
     const num = Math.floor(Math.random() * 50) + 1;
     return num;
 }
+let randomNumber = genRandomNunber();
 
 //Adding an event listener
 onEvent('click', btn, function () {
 
     let userNumber = userInput.value;
-    let randomNumber = genRandomNunber();
     let maxNumber = 50;
+    console.log(randomNumber);
     if (isNumber(userNumber)) {
 
         if (count < 1) {
