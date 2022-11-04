@@ -67,14 +67,11 @@ onEvent('click', btn, function () {
             count = 4;
         }
         else if (count < 1) {
-
             output.innerText = `Your are run out of Chances: My number was ${randomNumber}`;
             gameOver.innerText = 'Please restart the game';
             showRestart();
             btn.disabled = true;
             count = 4;
-
-
         } else if (userNumber < randomNumber) {
             output.innerText = `My number is greater : You have  ${count} chances`;
         } else if (userNumber > randomNumber) {
