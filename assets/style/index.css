@@ -48,7 +48,6 @@ p {
   }
   
   form {
-    width: 400px;
     text-align: right;
   }
    
@@ -90,7 +89,6 @@ p {
   }
 
   .output {
-    height: 52px;
     width: 100%;
     padding: 0 15px;
     border-radius: 20px;
@@ -135,7 +133,6 @@ p {
   
   .game-over {
     text-align: center;
-    width: 400px;
   }
 
 @keyframes shake {
