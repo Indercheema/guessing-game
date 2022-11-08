@@ -148,9 +148,6 @@ p {
 */
 
 @media (max-width: 480px) {
-  .calculator {
-      height: 100vh;
-  }
 
   p {
     font-size: 12px;
