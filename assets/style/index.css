@@ -148,8 +148,8 @@ p {
 */
 
 @media (max-width: 480px) {
-  .game {
-      height: 60%;
+  .calculator {
+      height: 100vh;
   }
 
   p {
