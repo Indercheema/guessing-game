@@ -141,3 +141,22 @@ p {
     30%, 50%, 70% { transform: translate3d(-4px, 0, 0) }
     40%, 60% { transform: translate3d(4px, 0, 0)       }
 }
+
+
+/* 
+480px and down
+*/
+
+@media (max-width: 480px) {
+  .game {
+      height: 60%;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h2, .btn, .restart , input[type="text"]  {
+    font-size: 15px;
+  }
+}
